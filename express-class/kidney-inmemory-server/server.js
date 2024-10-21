@@ -39,3 +39,39 @@ app.put("/",function(req,res){ //update
     }
     res.json({});
 })
+app.delete("/",function(req,res){ //remove
+    
+    const newKidneys =[];
+    if (isthereKidney()) {
+        for (let i = 0; i < users[0].kidneys.length; i++) {
+        if(users[0].kidneys[i].healthy){
+            newKidneys.push({
+                healthy :true
+            })
+
+        }
+        
+    }
+    users[0].kidneys = newKidneys;
+    res.json({msg : "done"});
+        
+    }else{
+        res.status(411).json({
+            msg:"You have no bad kidneys"
+        });
+    }
+    
+    
+})
+function isthereKidney() {
+    let atLeastOneUnhealthy = false;
+    for (let i = 0; i < users[0].kidneys.length; i++) {
+        if(!users[0].kidneys[i].healthy){
+            atLeastOneUnhealthy = true;
+
+        }
+        
+    }
+    return atLeastOneUnhealthy;
+
+}
