@@ -21,7 +21,7 @@ app.get("/", function(req,res){ // give input in query param
     })
 })
 app.listen(3001);
-app.use(express.json());
+app.use(express.json());//takes middleware as an input  //if middleware has to be called in every route after it we do this
 //middleware able to parse and get json body on server
 app.post("/", function(req,res){  // give input in body //pushes something new
     const isHealthy = req.body.isHealthy;
