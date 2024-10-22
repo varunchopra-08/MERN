@@ -1,0 +1,27 @@
+in memory objects are big no no
+in real world we have cluster multiple backends 
+
+Full stack Application
+Browser 
+backend
+Database there are more but till now these are some
+
+#Types of Databases
+Graph DB 
+Vector DB 
+SQL DB
+NoSql DB
+
+Mongo DB (NOsql db)
+creates tables(collections)
+lets you dump JSON data in each table 
+schemaless //no need to define structure of schema 
+scales well
+
+--> How does backend connect to database?
+using libraries!
+1. Express lets u create http server 
+2. jsonwebtokens lib lets you create jets
+3. Mongoose lets you connect to your database
+Let's face it, writing MongoDB validation, casting and business logic boilerplate is a drag. That's why we wrote Mongoose.
+

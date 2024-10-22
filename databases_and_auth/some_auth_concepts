@@ -1,0 +1,13 @@
+1)Hashing - hashing of password is done 
+converting simple stiring to complicates jibrish
+hashed password cant be decrypted manually
+1 way
+2) Encryption - 2way 
+converts password to jibrish 
+but we have key which decrypts it 
+3)JSON WEB TOKENS (JWT)- only works for JSON input 
+gives you a very long string
+token - gives you a token at the end (long string)// add authorization as a header in postman and put this tomen there to get data
+whoever have output can see the input
+jwt.verify --> they verify the long string and the password 
+cant be verified by all but hashed string can be converted to input
