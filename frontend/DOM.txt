@@ -1,0 +1,35 @@
+DOM - Document Object Model Api 
+interface for web documents
+Javascript is an implementation of ECMAscript spec
+chrome has written V8 engine
+
+Browser js 
+fetch
+settimeout
+setinterval
+documents
+
+Node js
+settimeout
+http
+fs
+
+Changing elements on website once website/page is loaded --> dynamic
+
+HTML
+classes
+    <style>
+    .container{    //class selector
+        properties of this class
+    }
+    #hero {
+        properties
+    }
+
+
+
+    <div class ="container" id = "hero"> id are supposed to uniquely identify
+
+inspect --> opens chrome dev tools
+DOM is a reference to that id mentioned 
+parseInt converts string to int 

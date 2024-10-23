@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input1" placeholder="1 number"><br>
+    <input type="text" id="input2" placeholder="2 number"><br>
+    <button onclick="populateDiv()">Calculate Sum</button>
+    <div id="finalSum"></div>
+    
+</body>
+<script>
+    //function debounce () if in call this on input and put in a delay of some ms 
+    //if once fn is called  but if again fn is called then restart with clearTimeout() writing it before the delay to clear whenever fn called
+    async function populateDiv(){
+        //debouncing- not send the rquest immediately / delyed sending of rquest ,throttling -->ignor 5 reques and accept the6 if 5 are same
+        //oninput - anytime input changes do the event 
+        let ans = document.getElementById("finalSum");
+        const input1 = document.getElementById("input1").value;
+        const input2 = document.getElementById("input2").value;
+        //axios is easier synax than fetch
+        const result = await fetch("http://localhost:3001/sum?a="+ input1 + "&b=" + input2); 
+        const final = await result.json();
+        ans.innerHTML = final.sum;       
+    }
+</script>
+</html>
