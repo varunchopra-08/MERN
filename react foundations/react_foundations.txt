@@ -1,0 +1,22 @@
+Jargon - DOM manipulation
+html injected in DOM via javascript 
+
+DOM (Document Object Model): A representation of the structure of a webpage, where every HTML element (like a div, paragraph, etc.) is a node in a tree-like structure.
+
+Element: A part of an HTML document (like <div>, <p>, etc.).
+
+Node: A single point in the DOM tree that represents an element, attribute, or text in the document.
+
+Select an element: The action of using JavaScript to find or "grab" a specific element in the DOM to work with.
+
+innerText: A property in JavaScript used to get or set the text inside an HTML element.
+
+style: A property in JavaScript used to change the CSS (styling) of an HTML element.
+
+addEventListener: A method in JavaScript that attaches a function to run when a particular event (like a click) happens on an element.
+
+createElement: A JavaScript method used to create a new HTML element (like a div, button, etc.) that isn’t yet on the page.
+
+appendChild: A method in JavaScript used to add a new child element to an existing element in the DOM.
+
+remove(): A method that removes an element from the DOM.
