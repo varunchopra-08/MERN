@@ -19,3 +19,4 @@ function App() {
 }
 
 export default App
+//inside jsx file we can accept html . this file contains both html and js of the web 
