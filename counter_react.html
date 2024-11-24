@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div id="buttonParent">
+    </div>
+    <script>
+        let state = {
+            count :0
+        }
+        function onButtonPress(){
+            state.count++;
+            buttonComponentReRender();//every tome i click button i am calling this because the state changes and we rerender
+        }
+        function buttonComponentReRender() { //this is taken care by react
+            document.getElementById("buttonParent").innerHTML= "";//clear DOM
+            const component = buttonCmponent(state.count);
+            document.getElementById("buttonParent").appendChild(component);//new elem given a state
+            
+        }
+        function buttonCmponent(count) {
+            const button = document .createElement("button");
+            button.innerHTML= `Counter ${count}`;
+            button.setAttribute("onclick" ,`onButtonPress()` );
+            return button;
+            
+            
+        }
+        buttonComponentReRender();//have to once manually trigger first
+    </script>
+    
+</body>
+</html>
